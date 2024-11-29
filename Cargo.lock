@@ -3143,6 +3143,37 @@ dependencies = [
 ]
 
 [[package]]
+name = "raydium-swap"
+version = "0.1.0"
+dependencies = [
+ "anchor-client",
+ "anyhow",
+ "arrayref",
+ "bincode",
+ "bytemuck",
+ "clap 4.5.20",
+ "dotenv",
+ "env_logger 0.11.5",
+ "futures-util",
+ "log",
+ "once_cell",
+ "rand 0.8.5",
+ "raydium-library",
+ "raydium_amm 0.3.0 (git+https://github.com/reactive-biscuit/raydium-amm.git?branch=patch/solana-v1.18.16)",
+ "reqwest",
+ "safe-transmute",
+ "serde",
+ "serde_json",
+ "solana-account-decoder",
+ "solana-client",
+ "solana-program",
+ "solana-sdk",
+ "spl-associated-token-account",
+ "spl-token 3.5.0",
+ "tokio",
+]
+
+[[package]]
 name = "raydium_amm"
 version = "0.3.0"
 source = "git+https://github.com/reactive-biscuit/raydium-amm.git?branch=patch/solana-v1.18.16#b4423f5b834dea4eebbc2f9e82550d12dcc810c3"
@@ -4819,37 +4850,6 @@ name = "subtle"
 version = "2.4.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "6bdef32e8150c2a081110b42772ffe7d7c9032b606bc226c8260fd97e0976601"
-
-[[package]]
-name = "swap"
-version = "0.1.0"
-dependencies = [
- "anchor-client",
- "anyhow",
- "arrayref",
- "bincode",
- "bytemuck",
- "clap 4.5.20",
- "dotenv",
- "env_logger 0.11.5",
- "futures-util",
- "log",
- "once_cell",
- "rand 0.8.5",
- "raydium-library",
- "raydium_amm 0.3.0 (git+https://github.com/reactive-biscuit/raydium-amm.git?branch=patch/solana-v1.18.16)",
- "reqwest",
- "safe-transmute",
- "serde",
- "serde_json",
- "solana-account-decoder",
- "solana-client",
- "solana-program",
- "solana-sdk",
- "spl-associated-token-account",
- "spl-token 3.5.0",
- "tokio",
-]
 
 [[package]]
 name = "syn"
